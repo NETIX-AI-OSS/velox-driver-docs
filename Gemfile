@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 3.10"
+gem "jekyll-relative-links", "~> 0.7"
+gem "kramdown-parser-gfm", "~> 1.1"
+gem "base64", "~> 0.3"
+gem "bigdecimal", ">= 3", "< 5"

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="{{ site.description | escape }}" />
+    <meta name="theme-color" content="#183d3b" />
+    <title>{{ page.title | escape }} · NETIX Velox</title>
+    <link
+      rel="icon"
+      href="{{ '/favicon.svg' | relative_url }}"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" />
+    <script
+      type="module"
+      src="{{ '/assets/mermaid.mjs' | relative_url }}"
+    ></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="{{ '/' | relative_url }}"
+        ><span>N</span> NETIX <small>/ VELOX</small></a
+      ><a href="https://github.com/NETIX-AI-OSS/velox-driver"
+        >Private driver ↗</a
+      >
+    </header>
+    <div class="shell">
+      <aside>
+        <div class="nav-label">DRIVER DOCUMENTATION</div>
+        <nav aria-label="Documentation">
+          <a
+            href="{{ '/' | relative_url }}"
+            {% if page.nav == 'overview' %}aria-current="page"{% endif %}
+            >Overview</a
+          >
+          <a
+            href="{{ '/protocol.html' | relative_url }}"
+            {% if page.nav == 'protocol' %}aria-current="page"{% endif %}
+            >Protocol & architecture</a
+          >
+          <a
+            href="{{ '/lifecycle.html' | relative_url }}"
+            {% if page.nav == 'lifecycle' %}aria-current="page"{% endif %}
+            >Panel lifecycle</a
+          >
+          <a
+            href="{{ '/captures.html' | relative_url }}"
+            {% if page.nav == 'captures' %}aria-current="page"{% endif %}
+            >Captured replies</a
+          >
+          <a
+            href="{{ '/setup.html' | relative_url }}"
+            {% if page.nav == 'setup' %}aria-current="page"{% endif %}
+            >Setup & usage</a
+          >
+          <a
+            href="{{ '/validation.html' | relative_url }}"
+            {% if page.nav == 'validation' %}aria-current="page"{% endif %}
+            >Validation & limits</a
+          >
+        </nav>
+        <div class="nav-meta">
+          v0.2.0 · Python 3.11+<br />Updated 26 October 2026<br /><br /><a
+            href="https://github.com/NETIX-AI-OSS/velox-driver-docs"
+            >Browse Markdown ↗</a
+          >
+        </div>
+      </aside>
+      <main id="content">
+        <div class="kicker">NETIX ENGINEERING / FIELD PROTOCOLS</div>
+        <article>{{ content }}</article>
+        <footer>
+          Documentation and historical evidence · v0.2.0<br /><a
+            href="https://github.com/NETIX-AI-OSS/velox-driver-docs"
+            >Markdown source</a
+          >
+          ·
+          <a href="{{ '/evidence/poll-replies.json' | relative_url }}"
+            >Complete reply capture</a
+          >
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

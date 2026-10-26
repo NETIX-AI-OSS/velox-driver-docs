@@ -1,0 +1,21 @@
+title: NETIX Velox
+description: RS232 driver, protocol evidence, and panel lifecycle
+url: https://netix-ai-oss.github.io
+baseurl: /velox-driver-docs
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-relative-links
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - vendor
+  - .bundle
+  - README.md
+  - Gemfile
+  - Gemfile.lock
