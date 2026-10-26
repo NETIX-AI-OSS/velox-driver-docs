@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "title": "Physical RS232 poll replies",
+  "capture_date": "2026-10-23",
+  "evidence_kind": "physical_capture",
+  "settings": {
+    "baudrate": 9600,
+    "bytesize": 8,
+    "parity": "O",
+    "stopbits": 1,
+    "address": 1
+  },
+  "summary": {
+    "reply_count": 5,
+    "featured_count": 4,
+    "unique_reply_patterns": 2,
+    "total_tx_bytes": 40,
+    "total_rx_bytes": 40,
+    "application_records": 0,
+    "all_checksums_valid": true
+  },
+  "context": "Captured after the panel signal ground was connected to the gateway RS232 signal ground. Two direct sends of original-JAR poll bytes followed by three Python-driver polls. Four replies are featured; the fifth is retained here. These empty replies establish communication only during that session, not alarm delivery or a complete panel status.",
+  "records": [
+    {
+      "id": 1,
+      "featured": true,
+      "source": "original_jar_replay",
+      "tx": "02 00 08 00 01 00 09 03",
+      "rx": "02 00 28 00 01 00 29 03",
+      "address": 1,
+      "checksum_valid": true,
+      "distinct_from_request": true,
+      "event_records": 0,
+      "session_started_at_utc": "2026-10-23T11:52:00.087970+00:00",
+      "tx_offset_seconds": 1.00252,
+      "rx_offset_seconds": 1.040362,
+      "response_delay_ms": 37.842
+    },
+    {
+      "id": 2,
+      "featured": true,
+      "source": "original_jar_replay",
+      "tx": "02 00 48 00 01 00 49 03",
+      "rx": "02 00 68 00 01 00 69 03",
+      "address": 1,
+      "checksum_valid": true,
+      "distinct_from_request": true,
+      "event_records": 0,
+      "session_started_at_utc": "2026-10-23T11:52:00.087970+00:00",
+      "tx_offset_seconds": 6.021093,
+      "rx_offset_seconds": 6.060422,
+      "response_delay_ms": 39.329
+    },
+    {
+      "id": 3,
+      "featured": true,
+      "source": "python_driver",
+      "rx": "02 00 28 00 01 00 29 03",
+      "address": 1,
+      "checksum_valid": true,
+      "reply_flag_valid": true,
+      "event_records": 0,
+      "poll_started_at_utc": "2026-10-23T11:52:13.518326+00:00",
+      "tx": "02 00 08 00 01 00 09 03",
+      "tx_logged_at_utc": "2026-10-23T11:52:13.518Z",
+      "rx_logged_at_utc": "2026-10-23T11:52:13.559Z"
+    },
+    {
+      "id": 4,
+      "featured": true,
+      "source": "python_driver",
+      "rx": "02 00 68 00 01 00 69 03",
+      "address": 1,
+      "checksum_valid": true,
+      "reply_flag_valid": true,
+      "event_records": 0,
+      "poll_started_at_utc": "2026-10-23T11:52:13.613289+00:00",
+      "tx": "02 00 48 00 01 00 49 03",
+      "tx_logged_at_utc": "2026-10-23T11:52:13.613Z",
+      "rx_logged_at_utc": "2026-10-23T11:52:13.642Z"
+    },
+    {
+      "id": 5,
+      "featured": false,
+      "source": "python_driver",
+      "rx": "02 00 28 00 01 00 29 03",
+      "address": 1,
+      "checksum_valid": true,
+      "reply_flag_valid": true,
+      "event_records": 0,
+      "poll_started_at_utc": "2026-10-23T11:52:13.696471+00:00",
+      "tx": "02 00 08 00 01 00 09 03",
+      "tx_logged_at_utc": "2026-10-23T11:52:13.696Z",
+      "rx_logged_at_utc": "2026-10-23T11:52:13.720Z"
+    }
+  ]
+}

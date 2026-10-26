@@ -1,0 +1,17 @@
+{
+  "package": "netix-velox",
+  "version": "0.2.0",
+  "algorithm": "SHA-256",
+  "files": {
+    "velox/__init__.py": "b18c04c72db5019e6f0a03e1adae287983863939cafff1a51abd16996033d74f",
+    "velox/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "velox/bus.py": "8f5bc17c6969d21c86ce901940e35d13aabbb51b2f6e9678be77615f44b7f431",
+    "velox/cli.py": "39dbdce404ac52d3234642dbc62f62bcbd98e9b2c69e4cfac0cfa49a9a80cf2c",
+    "velox/codec.py": "ddfeb7f3df6162a635f507d2515354e292b7d454153b33c1bad0619038d1f6f5",
+    "velox/config.py": "e3dd633281897d3cc40cdc860e2a97b819b7c5fdaea521695ec5d33cf6ea9ef7",
+    "velox/model.py": "f3700498ebf2225dc5e9a2a19d33718f9f4262566497ff366a34a28741766d91",
+    "velox/protocol.py": "e9e4174ca1da54bf42c9adc6d466e760c37edcc401d3c8c4d44aebd9ea35dba5",
+    "velox/simulator.py": "db79131f747a382c2374809737a6d4e2ce9654b952ee91e0310d2ff692de7978",
+    "velox/transport.py": "d64dc0dc7e5c86d294ccb531dae7793aa00686e63afc30815b6ab59c0563d5f9"
+  }
+}

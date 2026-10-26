@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "physical_capture_summary",
+  "started_at_utc": "2026-10-26T12:56:19+00:00",
+  "duration_seconds": 120,
+  "settings": {
+    "baudrate": 9600,
+    "bytesize": 8,
+    "parity": "O",
+    "stopbits": 1,
+    "address": 1
+  },
+  "poll_count": 17,
+  "timeouts": 17,
+  "tx_bytes": 136,
+  "rx_bytes": 0,
+  "decoded_frames": 0,
+  "panel_online": false,
+  "conclusion": "No RS232 receive bytes were observed in this completed test after a gateway reboot. The earlier successful session does not establish sustained operation."
+}
